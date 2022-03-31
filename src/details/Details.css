@@ -1,0 +1,102 @@
+.content img {
+  width: 50%;
+  display: inline-block;
+}
+
+.wrapper-horizontal {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.box-horizontal {
+  display: inline-block;
+  float: none;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 100%;
+  width: 40%;
+  margin-right: 50px;
+  height: 350px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: gray;
+}
+
+.box-horizontal h2 {
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 120px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.summary {
+  padding-bottom: 5%;
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  color: gray;
+}
+
+.summary h1 {
+  color: red;
+}
+
+p {
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 80px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.box-horizontal a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box-horizontal img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+  .box-horizontal {
+    width: 30%;
+    margin: 40px;
+  }
+
+  .content img {
+    width: 30%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .box-horizontal {
+    width: 20%;
+    margin: 50px;
+  }
+
+  .content img {
+    width: 30%;
+    display: inline-block;
+  }
+}
